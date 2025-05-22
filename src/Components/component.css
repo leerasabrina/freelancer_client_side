@@ -1,0 +1,37 @@
+.active{
+    text-decoration: underline;
+    color: rgb(196, 71, 4);
+}
+
+.width{
+    width: 500px !important;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 2s ease forwards;
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideOut {
+  animation: slideOut 2s ease forwards;
+}
+
