@@ -22,11 +22,11 @@ export const router = createBrowserRouter([
         {index:true,element:<Home></Home>},
         {path:'addtask',element:<Private><AddTask></AddTask></Private>},
         {path:'mytasks',element:<Private><MyPostedTasks></MyPostedTasks></Private>},
-        {path:'update/:id',element:<Update></Update>},
+        {path:'update/:id',element:<Private><Update></Update></Private>},
         {path:'browse',element:<Browse></Browse>},
         {path:'browse/:id',
           hydrateFallbackElement:<Loader></Loader>,
-          loader:({params})=>fetch(`http://localhost:5000/tasks/${params.id}`),
+          loader:({params})=>fetch(`https://freelancer-server-three.vercel.app/tasks/${params.id}`),
           element:<Private><MoreDetail></MoreDetail></Private>},
         {path:'signup',element:<SignUp></SignUp>},
         {path:'signin',element:<SignIn></SignIn>}

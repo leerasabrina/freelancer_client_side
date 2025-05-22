@@ -8,7 +8,7 @@ const Highlights = () => {
     {
       icon: <FaClipboardList className="text-4xl text-blue-600" />,
       label: "Total Tasks Posted",
-      value: "200+",
+      value: "300+",
     },
     {
       icon: <FaUserTie className="text-4xl text-green-600" />,

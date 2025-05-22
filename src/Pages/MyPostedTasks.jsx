@@ -17,7 +17,7 @@ const MyPostedTasks = () => {
   useEffect(() => {
     console.log(user.email)
     if (user?.email) {
-      fetch(`http://localhost:5000/mytasks?email=${user.email}`)
+      fetch(`https://freelancer-server-three.vercel.app/mytasks?email=${user.email}`)
         .then((res) => res.json())
         .then((data) => {
           setMyTasks(data);
@@ -38,7 +38,7 @@ const MyPostedTasks = () => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/mytasks/${id}`,{
+        fetch(`https://freelancer-server-three.vercel.app/mytasks/${id}`,{
           method: "DELETE",
         })
           .then((res) => res.json())

@@ -16,7 +16,6 @@ import { auth } from '../firebase/firebase.config';
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null); 
   const [loading, setLoading] = useState(true);
-  const googleProvider = new GoogleAuthProvider();
 
  
   const saveUserToDB = async (user) => {
@@ -30,7 +29,7 @@ const AuthProvider = ({ children }) => {
     };
 
     try {
-      const res = await fetch('http://localhost:5000/users', {
+      const res = await fetch('https://freelancer-server-three.vercel.app/users', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newUser),
@@ -44,20 +43,6 @@ const AuthProvider = ({ children }) => {
     }
   };
 
-  // const googleSignin = () => {
-  //   return signInWithPopup(auth, googleProvider)
-  //     .then(async (result) => {
-  //       const user = result.user;
-      
-  //       await saveUserToDB(user);
-  //       setUser({
-  //         uid: user.uid,
-  //         email: user.email,
-  //         displayName: user.displayName,
-  //         photoURL: user.photoURL,
-  //       });
-  //     });
-  // };
  
 
   const googleSignin = async (shouldPostUser = false) => {
@@ -66,7 +51,7 @@ const AuthProvider = ({ children }) => {
     const user = result.user;
   
     if (shouldPostUser) {
-      await fetch('http://localhost:5000/users', {
+      await fetch('https://freelancer-server-three.vercel.app/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -139,7 +124,7 @@ const AuthProvider = ({ children }) => {
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/users/${firebaseUser.email}`);
+      const res = await fetch(`https://freelancer-server-three.vercel.app/users/${firebaseUser.email}`);
       if (res.status === 404) {
         setUser(null);
         return;

@@ -21,7 +21,7 @@ const MoreDetail = () => {
 
   const handleBid = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/tasks/${task._id}/bid`, {
+      const res = await fetch(`https://freelancer-server-three.vercel.app/tasks/${task._id}/bid`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json"

@@ -6,7 +6,7 @@ const Feacher = () => {
   const { darkMode } = useContext(ModeContext);
 
   useEffect(() => {
-    fetch("http://localhost:5000/tasks")
+    fetch("https://freelancer-server-three.vercel.app/tasks")
       .then((res) => res.json())
       .then((data) => {
         const sortedTasks = data

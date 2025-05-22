@@ -11,7 +11,7 @@ const Update = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/mytasks/${id}`)
+    fetch(`https://freelancer-server-three.vercel.app/mytasks/${id}`)
       .then((res) => res.json())
       .then((data) => setTask(data));
   }, [id]);
@@ -27,7 +27,7 @@ const Update = () => {
       category: form.category.value,
     };
 
-    fetch(`http://localhost:5000/mytasks/${id}`, {
+    fetch(`https://freelancer-server-three.vercel.app/mytasks/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

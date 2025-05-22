@@ -12,7 +12,7 @@ const ModeProvider = ({ children }) => {
     setDarkMode(newMode);
 
     if (user?.email) {
-      fetch('http://localhost:5000/mode', {
+      fetch('https://freelancer-server-three.vercel.app/mode', {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: user.email, darkMode: newMode }),
@@ -23,7 +23,7 @@ const ModeProvider = ({ children }) => {
  
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/mode/${user.email}`)
+      fetch(`https://freelancer-server-three.vercel.app/mode/${user.email}`)
         .then((res) => res.json())
         .then((data) => {
           if (data?.darkMode !== undefined) {

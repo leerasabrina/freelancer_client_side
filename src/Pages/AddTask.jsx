@@ -35,7 +35,7 @@ const AddTask = () => {
       };
       
 
-    fetch("http://localhost:5000/tasks", { 
+    fetch("https://freelancer-server-three.vercel.app/tasks", { 
       method: "POST",
       headers: {
         "Content-Type": "application/json",
