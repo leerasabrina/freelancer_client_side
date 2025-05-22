@@ -23,7 +23,7 @@ const Update = () => {
     const updatedTask = {
       title: form.title.value,
       deadline: form.deadline.value,
-      price: form.price.value,
+      budget: form.budget.value,
       category: form.category.value,
     };
 
@@ -75,8 +75,8 @@ const Update = () => {
         />
         <input
           type="number"
-          name="price"
-          defaultValue={task?.price}
+          name="budget"
+          defaultValue={task?.budget}
           className={darkMode?"w-full border p-2 rounded bg-slate-800 text-white placeholder-white":"w-full border p-2 rounded text-black bg-white"}
           placeholder="Price"
           required
