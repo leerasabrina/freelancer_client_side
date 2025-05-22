@@ -20,7 +20,7 @@ const Banner = () => {
         <div id="slide1" className="carousel-item relative w-full">
           <img src={wbImg} className="w-full lg:h-[500px]" />
           <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 "></div>
-          <div className="absolute lg:left-[400px] lg:top-[150px] flex flex-col ">
+          <div className="absolute lg:left-[400px] lg:top-[150px] flex flex-col gap-4">
            
             <h1 className={`text-white text-3xl p-2 ${activeSlide === 1 && (!clicked || clicked) ? 'animate-slideIn' : ''}`}>
             Creative Web Design Solutions
