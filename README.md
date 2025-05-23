@@ -1,5 +1,5 @@
 # Site name: SkillHunt
-Live Site: https://neon-otter-9937c6.netlify.app/
+Live Site URL: https://dancing-pie-6c5e2d.netlify.app/
 
 * About the Website
 SkillHunt is a freelancing platform where users can post tasks and connect with freelancers. It is designed to make task management easy and efficient for both task posters and freelancers.
