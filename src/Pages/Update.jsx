@@ -40,7 +40,7 @@ const Update = () => {
           Swal.fire("Updated!", "Task updated successfully.", "success");
           navigate("/mytasks");
         } else {
-          Swal.fire("No Change", "N updates were made to the task.", "info");
+          Swal.fire("No Change", "No updates were made to the task.", "info");
         }
       });
   };
