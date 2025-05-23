@@ -11,7 +11,7 @@ const Newsletter = () => {
     e.preventDefault();
 
     if (!email.includes('@')) {
-      toast.error('Please enter  valid email!');
+      toast.error('Please enter a valid email!');
       return;
     }
     toast.success('Subscribed Successfully!');
