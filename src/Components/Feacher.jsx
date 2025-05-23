@@ -18,7 +18,7 @@ const Feacher = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl my-10 mx-auto p-4">
+    <div className="max-w-7xl my-10 mx-auto lg:p-4">
       <h2 className="text-3xl font-semibold mb-4">Latest Tasks</h2>
       {tasks.length === 0 && <p>No tasks found.</p>}
 

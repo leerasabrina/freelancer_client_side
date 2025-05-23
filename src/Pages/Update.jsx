@@ -37,7 +37,7 @@ const Update = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount > 0) {
-          Swal.fire("Updated!", "Task updated successfully.", "success");
+          Swal.fire("Updated", "Task updated successfully.", "success");
           navigate("/mytasks");
         } else {
           Swal.fire("No Change", "No updates were made to the task.", "info");

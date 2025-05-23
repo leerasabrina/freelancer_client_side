@@ -107,15 +107,13 @@ Login/Signup
   </div>
 )}
 
-
-     
-     
+    
      
       {!user && (
         <>
-         <Link to={'/signup'} ><a className="btn w-[120px] bg-[#0c65e3] text-white text-lg">Sign Up</a></Link>
-         <Link to="/signin">
-        <a className="btn bg-[#0c65e3] w-[120px] text-white text-lg">Sign In</a>
+         <Link to={'/signup'} className="btn w-[120px] bg-[#0c65e3]  text-white text-lg">Sign Up</Link>
+         <Link to="/signin" className="btn bg-[#0c65e3] w-[120px] text-white text-lg">
+        Sign In
         </Link></>
       )}
 

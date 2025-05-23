@@ -20,7 +20,7 @@ const Banner = () => {
         <div id="slide1" className="carousel-item relative w-full">
           <img src={wbImg} className="w-full lg:h-[500px]" />
           <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 "></div>
-          <div className="absolute lg:left-[400px] lg:top-[150px] flex flex-col gap-4">
+          <div className="absolute lg:left-[400px] lg:top-[150px] flex flex-col gap-2">
            
             <h1 className={`text-white text-3xl p-2 ${activeSlide === 1 && (!clicked || clicked) ? 'animate-slideIn' : ''}`}>
             Creative Web Design Solutions
@@ -29,7 +29,7 @@ const Banner = () => {
             Connect with expert designers to craft modern, responsive, and user-friendly websites for your brand.
             </p>
           </div>
-          <div className="absolute left-5 right-5 top-[190px] lg:top-[300px] flex -translate-y-1/2 transform justify-between">
+          <div className="absolute left-5 right-5 top-[210px] lg:top-[300px] flex -translate-y-1/2 transform justify-between">
             <a href="#slide3" className="btn btn-circle " onClick={() => handleSlideChange(3)}>
               ❮
             </a>
@@ -74,7 +74,7 @@ const Banner = () => {
             Boost your business with tailored marketing strategies in SEO, social media, and PPC campaigns.
             </p>
           </div>
-          <div className="absolute left-5 right-5 top-[150px] lg:top-[300px]  flex -translate-y-1/2 transform justify-between">
+          <div className="absolute left-5 right-5 top-[210px] lg:top-[300px]  flex -translate-y-1/2 transform justify-between">
             <a href="#slide2" className="btn btn-circle" onClick={() => handleSlideChange(2)}>
               ❮
             </a>
