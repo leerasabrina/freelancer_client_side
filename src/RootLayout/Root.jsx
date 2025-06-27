@@ -21,14 +21,13 @@ const Root = () => {
 
     return (
         <div className='min-h-screen'>
-        <ModeProvider>
+        
         <Navbar></Navbar>
        
         {loading ? <Loader /> : <Outlet />}
        <Footer></Footer>
        <ToastContainer position="top-center" autoClose={2000} />
-        </ModeProvider>
-        
+       
         </div>
     );
 };

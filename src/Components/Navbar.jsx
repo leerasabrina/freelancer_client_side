@@ -54,6 +54,12 @@ Login/Signup
             </li>
             <li><NavLink to={'/browse'}>Browse Tasks</NavLink></li>
             <li><NavLink to={'/mytasks'}>My Posted Tasks</NavLink></li>
+            {user && (
+  <li>
+    <NavLink to="/dashboard">Dashboard</NavLink>
+  </li>
+)}
+
           </ul>
         </div>
         {/* logo */}
@@ -70,6 +76,12 @@ Login/Signup
           </li>
           <li><NavLink to={'/browse'}>Browse Tasks</NavLink></li>
           <li><NavLink to={'/mytasks'}>My Posted Tasks</NavLink></li>
+          {user && (
+  <li>
+    <NavLink to="/dashboard">Dashboard</NavLink>
+  </li>
+)}
+
 
         </ul>
       </div>

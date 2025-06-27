@@ -12,6 +12,11 @@ import Update from '../Pages/Update';
 import MoreDetail from '../Pages/MoreDetail';
 import ErrorPage from '../Pages/ErrorPage';
 import Loader from '../Loader/Loader';
+import Dashboard from '../Dashboard/Deshboard';
+import Overview from '../Pages/DashboardPages/Overview';
+import AddItems from '../Dashboard/AddItems';
+import MyItems from '../Dashboard/MyItems';
+import AllItems from '../Dashboard/AllItems';
 
 export const router = createBrowserRouter([
     {
@@ -32,5 +37,15 @@ export const router = createBrowserRouter([
         {path:'signin',element:<SignIn></SignIn>}
     ]
     },
+    {path:'/',Component:Dashboard,
+      children:[
+        {path:'dashboard',Component:Overview},
+        {path:'dashboard/add-item',Component:AddItems},
+        {path:'dashboard/my-items',Component:MyItems},
+        {path:'dashboard/all-items',Component:AllItems}
+      ]
+    }
   ]);
+  
+
   
