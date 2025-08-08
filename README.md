@@ -3,7 +3,7 @@ Live Site URL: https://dancing-pie-6c5e2d.netlify.app/
 
 * About the Website
 SkillHunt is a freelancing platform where users can post tasks and connect with freelancers. It is designed to make task management easy and efficient for both task posters and freelancers.
-<p align='center'> <img src="https://i.ibb.co.com/cSCf8c2q/Screenshot-2025-08-08-173227.png" alt="Screenshot" width="600"/></p>
+<p align='center'> <img src="https://i.ibb.co.com/cSCf8c2q/Screenshot-2025-08-08-173227.png" alt="Screenshot" width="700"/></p>
 # Key Features
 - Add Task Section: Registered users can post new tasks and hire freelancers to work on them.
 
